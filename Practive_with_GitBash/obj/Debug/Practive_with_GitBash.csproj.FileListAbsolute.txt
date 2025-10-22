@@ -1,0 +1,7 @@
+D:\Модули\Practive_with_GitBash\Practive_with_GitBash\bin\Debug\Practive_with_GitBash.exe.config
+D:\Модули\Practive_with_GitBash\Practive_with_GitBash\bin\Debug\Practive_with_GitBash.exe
+D:\Модули\Practive_with_GitBash\Practive_with_GitBash\bin\Debug\Practive_with_GitBash.pdb
+D:\Модули\Practive_with_GitBash\Practive_with_GitBash\obj\Debug\Practive_with_GitBash.csproj.AssemblyReference.cache
+D:\Модули\Practive_with_GitBash\Practive_with_GitBash\obj\Debug\Practive_with_GitBash.csproj.CoreCompileInputs.cache
+D:\Модули\Practive_with_GitBash\Practive_with_GitBash\obj\Debug\Practive_with_GitBash.exe
+D:\Модули\Practive_with_GitBash\Practive_with_GitBash\obj\Debug\Practive_with_GitBash.pdb
