@@ -6,35 +6,34 @@ namespace CircleCalculations
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Программа для расчёта параметров круга");
-            Console.Write("Введите радиус: ");
+            Console.WriteLine("Программа для расчёта параметров прямоугольника");
+            Console.Write("Введите длину: ");
+            string lengthInput = Console.ReadLine();
 
-            string input = Console.ReadLine();
+            Console.Write("Введите ширину: ");
+            string widthInput = Console.ReadLine();
 
-            if (double.TryParse(input, out double radius))
+            if (double.TryParse(lengthInput, out double length) &&
+                double.TryParse(widthInput, out double width))
             {
-                double circumference = CalculateCircumference(radius);
-                double area = CalculateArea(radius);
-                double volume = CalculateSphereVolume(radius);
+                double perimeter = CalculatePerimeter(length, width);
+                double area = CalculateRectangleArea(length, width);
 
-                Console.WriteLine($"Длина окружности: {circumference:F2}");
-                Console.WriteLine($"Площадь круга: {area:F2}");
-                Console.WriteLine($"Объем шара: {volume:F2}");
+                Console.WriteLine($"Периметр прямоугольника: {perimeter:F2}");
+                Console.WriteLine($"Площадь прямоугольника: {area:F2}");
             }
 
             Console.ReadKey();
         }
-        static double CalculateCircumference(double radius)
+
+        // ОБЫЧНЫЙ метод класса (не статическая локальная функция)
+        static double CalculatePerimeter(double length, double width)
         {
-            return 2 * Math.PI * radius;
+            return 2 * (length + width);
         }
-        static double CalculateArea(double radius)
+        static double CalculateRectangleArea(double length, double width)
         {
-            return Math.PI * Math.Pow(radius, 2);
-        }
-        static double CalculateSphereVolume(double radius)
-        {
-            return (4.0 / 3.0) * Math.PI * Math.Pow(radius, 3);
+            return length * width;
         }
     }
 }
