@@ -6,6 +6,7 @@ namespace CircleCalculations
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("=== Калькулятор фигур ===");
             Console.WriteLine("Программа для расчёта параметров прямоугольника");
             Console.Write("Введите длину: ");
             string lengthInput = Console.ReadLine();
