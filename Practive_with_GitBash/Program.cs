@@ -13,13 +13,11 @@ namespace CircleCalculations
 
             if (double.TryParse(input, out double radius))
             {
-                Console.WriteLine($"Радиус: {radius}");
                 double circumference = CalculateCircumference(radius);
+                double area = CalculateArea(radius);
+
                 Console.WriteLine($"Длина окружности: {circumference:F2}");
-            }
-            else
-            {
-                Console.WriteLine("Ошибочка! Введите корректное число.");
+                Console.WriteLine($"Площадь круга: {area:F2}");
             }
 
             Console.ReadKey();
@@ -28,5 +26,10 @@ namespace CircleCalculations
         {
             return 2 * Math.PI * radius;
         }
+        static double CalculateArea(double radius)
+        {
+            return Math.PI * Math.Pow(radius, 2);
+        }
+
     }
 }
