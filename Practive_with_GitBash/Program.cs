@@ -15,9 +15,11 @@ namespace CircleCalculations
             {
                 double circumference = CalculateCircumference(radius);
                 double area = CalculateArea(radius);
+                double volume = CalculateSphereVolume(radius);
 
                 Console.WriteLine($"Длина окружности: {circumference:F2}");
                 Console.WriteLine($"Площадь круга: {area:F2}");
+                Console.WriteLine($"Объем шара: {volume:F2}");
             }
 
             Console.ReadKey();
@@ -30,6 +32,9 @@ namespace CircleCalculations
         {
             return Math.PI * Math.Pow(radius, 2);
         }
-
+        static double CalculateSphereVolume(double radius)
+        {
+            return (4.0 / 3.0) * Math.PI * Math.Pow(radius, 3);
+        }
     }
 }
